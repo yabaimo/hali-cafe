@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Slider</title>
+    <style>
+/* Recent review section */
+#recent-review {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Hide extra content outside the container */
+    position: relative;
+    width: 100%; 
+    padding: 20px 0;
+
+}
+
+/* Wrapper for all review items */
+.review-wrapper {
+    display: flex;
+    animation: scrollWithPause 20s linear infinite; 
+    gap: 40px; /* Adds spacing between cards */
+}
+
+/* Each review card */
+.malupiton-review {
+    height: 400px; 
+    width: 320px; 
+    border-radius: 20px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.malupiton-review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Review images */
+.malupiton {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 15px;
+    border: 4px solid #eaeaea;
+    transition: border-color 0.3s ease;
+}
+
+.malupiton-review:hover .malupiton {
+    border-color: #ffa500; /* Highlight border on hover */
+}
+
+/* Review text */
+.malupiton-review h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.malupiton-review p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+/* Star rating system */
+.star-rating {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-rating i {
+    font-size: 20px;
+    color: #ffc107; /* Star color */
+    margin: 0 2px;
+    transition: transform 0.3s ease;
+}
+
+.star-rating i:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Keyframe animation for scrolling */
+@keyframes scrollWithPause {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-1 * (320px + 40px) * 4)); /* Adjust for card width + gap and duplicate count */
+    }
+}
+
+/* Ensure seamless looping */
+.review-wrapper .malupiton-review {
+    flex-shrink: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="recent-review">
+        <div class="review-wrapper">
+            <!-- Original reviews -->
+            <div class="malupiton-review">
+                <img src="new\pictures\review-pic1.png" alt="malupiton" class="malupiton">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h1 class="review-name">Lioness M.</h1>
+                <p>Great food and good vibes! Perfect for laughs with friends. Just don't be shocked by the bill!</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="new\pictures\review-pic2.png" alt="jobert" class="malupiton">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h1 class="review-name">Vinodhini <br>Rajasekhar</h1>
+                <p>It's a beautiful place.. lovely creative tasty Chami.. Siopao are to die for!</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="new\pictures\review-pic3.png" alt="mima" class="malupiton">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h1 class="review-name">Manivannan <br>Kamaraj</h1>
+                <p>Has become my regular place to buy Chami. Wonderful taste and economical price.</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="new\pictures\review-pic4.png" alt="josh" class="malupiton">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h1 class="review-name">Babu Kiruba</h1>
+                <p>It's a good place for a budget foodie. The Pancit and desserts are my choice here.</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="new\pictures\review-pic5.png" alt="beluga" class="malupiton">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h1 class="review-name">Jeevitha</h1>
+                <p>My favorite place. Fresh ingredients with a catalog to customize your food.</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="new\pictures\review-pic1.png" alt="Trevor" class="malupiton">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h1 class="review-name">Lioness M.</h1>
+                <p>Good place to hang out with friends and family. Very economical and great food quality.</p>
+            </div>
+            <!-- Duplicate reviews for seamless scrolling -->
+            <div class="malupiton-review">
+                <img src="new\pictures\review-pic2.png" alt="malupiton" class="malupiton">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h1 class="review-name">Vinodhini <br>Rajasekhar</h1>
+                <p>Great food and good vibes! Perfect for laughs with friends. Just don't be shocked by the bill!</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="new\pictures\review-pic3.png" alt="jobert" class="malupiton">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h1 class="review-name">Manivannan <br>Kamaraj</h1>
+                <p>It's a beautiful place.. lovely creative tasty Chami.. Siopao are to die for!</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="new\pictures\review-pic4.png" alt="mima" class="malupiton">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h1 class="review-name">Babu Kiruba</h1>
+                <p>Has become my regular place to buy Chami. Wonderful taste and economical price.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

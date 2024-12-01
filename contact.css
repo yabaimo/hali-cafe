@@ -1,0 +1,135 @@
+.contact-container {
+    height: 600px;
+    width: 700px;
+    border: 5px solid gray;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px; /* Optional: Rounds the container corners */
+    box-sizing: border-box; /* Ensures padding does not affect width/height */
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.form-control {
+    width: 80%; /* Adjusts width to be relative to the container */
+    margin: 10px auto; /* Centers the input and adds spacing */
+    padding: 10px; /* Adds internal padding */
+    font-size: 18px;
+    background-color: transparent; /* Transparent background */
+    border: none;
+    border-bottom: 2px solid gray; /* Bottom border for design */
+    color: black;
+    outline: none; /* Removes the focus outline */
+    border-radius: 0; /* Removes any rounded corners */
+    display: block; /* Makes inputs stack vertically */
+}
+
+.form-control::placeholder {
+    color: gray; /* Placeholder text color */
+}
+
+#sub {
+    margin-top: 30px; /* Adds spacing above the button */
+    border-radius: 25px;
+    height: 50px;
+    width: 500px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:rgba(255, 255, 255, 0.8); /* Button background color */
+    color: brown; /* Button text color */
+    border: none;
+    cursor: pointer;
+    display: block; /* Centers the button */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sub:hover {
+    background-color: #cc0f08; /* Darker shade for hover effect */
+}
+
+#person, #gmail, #mess {
+    text-align: left; /* Aligns text and placeholder to the left */
+}
+
+#address-text p{
+    margin: 0;
+    padding: 0;
+}
+
+
+#address-text{
+    margin-left: 30px;
+}
+
+
+#adress img{
+    background: #D9D9D9;
+    border-radius: 360%;
+    margin-left: 100px;
+    height: auto;
+    width: 70px;
+}
+#adress{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* phone address */
+#phone-text p{
+    margin: 0;
+    padding: 0;
+}
+
+
+#phone-text{
+    margin-left: 30px;
+}
+
+
+#phone img{
+    background: #D9D9D9;
+    border-radius: 360%;
+    margin-left: 100px;
+    height: auto;
+    width: 70px;
+}
+#phone{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+/* email address */
+#email-text p{
+    margin: 0;
+    padding: 0;
+}
+
+
+#email-text{
+    margin-left: 30px;
+}
+
+
+#email img{
+    background: #D9D9D9;
+    border-radius: 360%;
+    margin-left: 100px;
+    height: auto;
+    width: 70px;
+}
+#email{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#contact-info{
+    display: flex;
+    margin-top: 90px;
+}
+
